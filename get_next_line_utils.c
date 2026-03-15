@@ -6,11 +6,12 @@
 /*   By: cbozkurt <cbozkurt@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 16:39:15 by cbozkurt          #+#    #+#             */
-/*   Updated: 2026/02/20 16:58:02 by cbozkurt         ###   ########.fr       */
+/*   Updated: 2026/03/15 17:56:50 by cbozkurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "get_next_line.h"
 
 size_t	ft_strlen(const char *s)
 {

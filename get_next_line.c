@@ -6,7 +6,7 @@
 /*   By: cbozkurt <cbozkurt@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 12:15:23 by cbozkurt          #+#    #+#             */
-/*   Updated: 2026/02/19 15:39:56 by cbozkurt         ###   ########.fr       */
+/*   Updated: 2026/04/07 23:04:46 by cbozkurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,11 @@ char	*get_next_line(int fd)
 	}
 	stash = read_as_buffer(fd, stash);
 	if (!stash || stash[0] == '\0')
+	{
+		free(stash);
+		stash = NULL;
 		return (NULL);
+	}
 	chosen_one = next_lining(stash);
 	stash = clean_stash(stash);
 	return (chosen_one);

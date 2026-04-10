@@ -18,7 +18,8 @@ Doing things slowly and one by one at a time is encouraged.
 
 ### How I started  
 
-I started out just by reading the file, nothing else.  
+I started out just by reading the file, nothing else. I wasn't even aware of static function
+when I started doing the project, the whole thing was working on stack with enough buffersize.
 Created a function to write until the first `\n` that loop sees.  
 Called another function that cleans up the written part and returns the remaining part.  
 
